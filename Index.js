@@ -3,12 +3,12 @@ const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
 // ============================================
 // CONFIG
 // ============================================
-const DISCORD_TOKEN = 'MTQ3MzcxODg5MzQzOTYxNTA0OA.Gj8Y5O.cA3jaoLf29V8IXkg-pc5U5EGegXVswPnBU2lCU';
+const DISCORD_TOKEN = process.env.DISCORD_TOKEN;
 const STATUS_CHANNEL_ID = '1473713482267627733';
 
 // Yummy API config
 const YUMMY_PROXY_URL = 'https://yummytrackstat.com/api/proxy';
-const YUMMY_AUTH_TOKEN = 'MTIxOTY3Njk3NTM3MTIxMTI1NTQ.yM0VI1QJDZrN2G1AOOlp8IqD1FduZe'; // ⚠️ VERIFIE CE TOKEN — copie-le depuis ton navigateur Network > Headers > Authorization (sans le "Bearer ")
+const YUMMY_AUTH_TOKEN = process.env.YUMMY_TOKEN;
 
 // Bot power settings
 const MAX_ONLINE = 780;          // 100% capacity
